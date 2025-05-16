@@ -4,19 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
-using System.IO;
+using System.Xml.Linq;
 
 namespace EtteTest
 {
+
     class Program
     {
         static void Main(string[] args)
         {
-            XmlDocument xmlDoc = new XmlDocument();
-            string XMLpath = Directory.GetCurrentDirectory() + "\\test.xml";
+            Functions fn = new Functions();
 
+            fn.ReadSingleAttribute();
 
-
+            Console.ReadLine();
         }
     }
 }
